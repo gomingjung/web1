@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - HTML</title>
+  <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+  }
+   a {
+     color:black;
+     text-decoration: none;
+   }
+   h1 {
+     font-size:45px;
+     text-align: center;
+     border-bottom:1px solid gray;
+     margin:0;
+     padding:20px;
+   }
+   ol{
+     border-right:1px solid gray;
+     width:100px;
+     margin:0;
+     padding:20px;
+   }
+   #grid{
+     display: grid;
+     grid-template-columns: 150px 1fr;
+   }
+   #grid ol{
+     padding-left:33px;
+   }
+   #grid #article{
+     padding-left:25px;
+   }
+   @media(max-width:800px){
+     #grid{
+       display: block;
+     }
+     ol{
+       border-right:none;
+     }
+     h1{
+       border-bottom:none;
+     }
+     img {
+       max-width: 100%;
+       height:auto;
+     }
+   }
+
+  </style>
+</head>
+<body>
+  <h1><a hreg= "index.html">현타 온 징요의 나날</a></h1>
+  <div id="grid">
+  <ol>
+    <li><a href="1.html">CG</a></li>
+    <li><a href="2.html" id="active">3D MAX</a></li>
+    <li><a href="3.html">Design</a></li>
+  </ol>
+  <div id="article">
+    <h2>3D MAX</h2>
+    <P>
+      그저께 새벽 6시쯤에 일어나서..3D MAX 2019 하고, 3D Vray를 막 설치하였다.
+      그리고 동영상 보면서 작업 시작하였다.
+    </p>
+    <p>
+      <img src="00.jpg">
+      <img src="000000.gif">
+      <img src="아이클레이.png">
+    </P>
+  </div>
+</div>
+</body>
+</html>
